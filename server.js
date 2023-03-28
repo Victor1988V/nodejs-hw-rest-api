@@ -11,11 +11,7 @@ mongoose
       console.log("Database connection successful");
     })
   )
-  .catch((error) => {
-    console.log(error.message);
+  .catch((err) => {
+    console.log(err.message);
     process.exit(1);
   });
-
-// app.listen(3000, () => {
-//   console.log("Server use port : 3000");
-// });
